@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+.homepage {
+
+    background: linear-gradient(to top, rgba(0, 250, 250, 0.5), rgba(0, 250, 250, 0.5)), url("https://wallpapercave.com/wp/wp4286413.jpg");
+    background-attachment: fixed;
+
+}
+
+.heading {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 800;
+    font-family: 'Secular One', sans-serif;
+}
+
+.card {
+    border-radius: 25px;
+    margin-top: 30px;
+    margin-top: 30px;
+
+}
+
+.cardheading {
+    color: blue;
+    font-size: 30px;
+    font-family: 'Roboto';
+    font-weight: bold;
+    text-align: center;
+}
+
+.description {
+    color: gray;
+}
+
+.Readmore {
+    color: blue;
+    font-weight: 500;
+}
+
+.imgcontainer {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.image {
+    width: 40vw;
+    height: 20vh;
+    border-radius: 25px;
+    object-fit: cover;
+
+}
+
+.detailview {
+    background: linear-gradient(to top, rgba(0, 250, 250, 0.5), rgba(0, 250, 250, 0.5)), url("https://flyingcdn-e81424e1.b-cdn.net/wp-content/uploads/2020/02/mountain3.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+}
+
+.detailimage {
+    width: 100%;
+}
+
+.detailcard {
+    padding: 30px;
+    background-color: white;
+}
+
+.detaildescription {
+    color: black;
+    font-weight: 300;
+}
+
+.detailheading {
+    font-weight: 800;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.custombtn {
+    background-color: navy;
+    border-radius: 30px;
+    width: 150px;
+    height: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+}
+
+.logo {
+    font-size: 20px;
+
+
+}
+
+.footer {
+    font-size: 20px;
+    font-weight: bold;
+}
