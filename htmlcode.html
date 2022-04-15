@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/61ee903bb8.js" crossorigin="anonymous "></script>
+</head>
+
+<body>
+    <div id="sectionHomePage">
+        <div class="homepage">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="heading pt-3 pb-3">Tourist Places in India</h1>
+                    </div>
+                    <div class="col-12">
+                        <div class="card shadow d-flex flex-row p-3">
+                            <div class="description ">
+                                <h1 class="cardheading">Taj Mahal</h1>
+                                <p class="matter">A beautiful white marble art which respresents the symbol of love which was constructed by order of Mughal Emperor Shah Jahan in ....</p>
+                                <p class="Readmore" onclick="display('sectionTajMahal')">
+                                    Read More
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                    </svg>
+                                </p>
+                            </div>
+                            <div class="imgcontainer ">
+                                <img class="image" src="https://t3.ftcdn.net/jpg/01/79/20/78/240_F_179207850_awa2IEx0wPVYIkBypowqas6wvWqrUPwv.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card  shadow d-flex flex-row p-3">
+                            <div class="description">
+                                <h1 class="cardheading">Akshardham</h1>
+                                <p class="matter">Akshardham is one of the Largest Hindu Temple in India.sculptur's on this temple represents 10,000 years of indian culture.This ....</p>
+                                <p class="Readmore" onclick="display('sectionAkshardham')">Read More
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                    </svg>
+                                </p>
+                            </div>
+                            <div class="imgcontainer">
+                                <img class="image" src="https://t3.ftcdn.net/jpg/04/65/56/88/240_F_465568838_xd1PegueFafOtSdpXs6M46kDMUo4n4Lp.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card  shadow d-flex flex-row p-3">
+                            <div class="description">
+                                <h1 class="cardheading">Golden Temple</h1>
+                                <p class="matter">Golden Temple was built as a place of worship of all religions.It also includes world's largest free kitchen which is capable to serve more than ....</p>
+                                <p class="Readmore" onclick="display('sectionGoldenTemple')">Read More
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                    </svg>
+                                </p>
+                            </div>
+                            <div class="imgcontainer">
+                                <img class="image" src="https://t3.ftcdn.net/jpg/02/71/02/54/240_F_271025434_51PTT0CvEtP5HijyRnqGbnlklq3nageW.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card  shadow d-flex flex-row p-3">
+                            <div class="description">
+                                <h1 class="cardheading">Dal Lake</h1>
+                                <p class="matter">Dal Lake is the beautiful lake where we can stay in the boat houses.The lake is surrounded with Himalayas, many tourists visit this place in ...</p>
+                                <p class="Readmore" onclick="display('sectionDalLake')">Read More
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                    </svg>
+                                </p>
+                            </div>
+                            <div class="imgcontainer">
+                                <img class="image" src="https://t4.ftcdn.net/jpg/03/94/16/49/240_F_394164909_l4UXVhoiakzYx2NyNEcYzFqpLtEgfBsH.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card shadow  d-flex flex-row p-3">
+                            <div class="description">
+                                <h1 class="cardheading">Ranthambore National Park</h1>
+                                <p class="matter">Ranthambore National Park is a national park in Rajasthan, India, with an area of 1,334 km². It is bounded to the north by the ...</p>
+                                <p class="Readmore" onclick="display('sectionRanthamboreNationalPark')">Read More
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                    </svg>
+                                </p>
+                            </div>
+                            <div class="imgcontainer">
+                                <img class="image" src="https://t3.ftcdn.net/jpg/02/86/75/58/240_F_286755836_JMhG7CZ8YcIJDDrANzKt5JgN5aojyp77.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card  shadow d-flex flex-row p-3">
+                            <div class="description">
+                                <h1 class="cardheading">Tirupati</h1>
+                                <p class="matter">Tirupati located in the southeastern part of Andhra Pradesh,is a Hindu God Lord Venkateswara(Balaji) Temple, Tirupati is famous for...</p>
+                                <p class="Readmore" onclick="display('sectionTirupati')">Read More
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                    </svg>
+                                </p>
+                            </div>
+                            <div class="imgcontainer">
+                                <img class="image" src="https://t3.ftcdn.net/jpg/03/56/97/24/240_F_356972409_3OPKX66ljsBQNITYN4XgKmUtpAt8IdGB.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card shadow  d-flex flex-row p-3">
+                            <div class="description">
+                                <h1 class="cardheading">Adiyogi statue</h1>
+                                <p class="matter">The Adiyogi statue is a 34-metre tall, 45-metre long and 25-metre wide steel statue of Shiva with Thirunamam at Coimbatore. It is recognized by the Guinness World Records as ...</p>
+                                <p class="Readmore" onclick="display('sectionAdiyogistatue')">Read More
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                    </svg>
+                                </p>
+                            </div>
+                            <div class="imgcontainer">
+                                <img class="image" src="https://t4.ftcdn.net/jpg/04/88/61/25/240_F_488612500_8BglB0mAUM6LICi3T7F0lR7HEL2Wwh62.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card shadow  d-flex flex-row p-3">
+                            <div class="description">
+                                <h1 class="cardheading">Statue of Unity</h1>
+                                <p class="matter">The Statue of Unity is the world's tallest statue, with a height of 182 metres, located in the state of Gujarat, India. It depicts Indian statesman and independence activist Vallabhbhai Patel...</p>
+                                <p class="Readmore" onclick="display('sectionStatueofUnity')">Read More
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                    </svg>
+                                </p>
+                            </div>
+                            <div class="imgcontainer">
+                                <img class="image" src="https://ak.picdn.net/shutterstock/videos/1024024013/thumb/1.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card shadow  d-flex flex-row p-3">
+                            <div class="description">
+                                <h1 class="cardheading">Ram Mandir Ayodhya</h1>
+                                <p class="matter">Ram Mandir is a Hindu temple that is being built in Ayodhya, Uttar Pradesh, India, at the site of Ram Janmabhoomi...</p>
+                                <p class="Readmore" onclick="display('sectionRamMandirAyodhya')">Read More
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                    </svg>
+                                </p>
+                            </div>
+                            <div class="imgcontainer">
+                                <img src="https://images.news18.com/ibnlive/uploads/2020/08/1596532847_ram-mandir-in-ayodhya-photos-2.jpg?impolicy=website&width=0&height=0" class="image" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="text-center m-5">
+                            <i class="fa-regular fa-copyright logo"></i>
+                            <span class="footer">Created by N S R K Sree Charan 2022.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectionTajMahal">
+        <div class="detailview">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="detailheading">Taj Mahal</h1>
+                    </div>
+                    <div class="col-12">
+                        <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="https://t4.ftcdn.net/jpg/03/41/73/15/240_F_341731569_V9LDkS6ZlHcIhwK4OWiN85chDlCE7VBT.jpg" class="d-block detailimage" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://t3.ftcdn.net/jpg/03/94/05/28/240_F_394052843_2vbZbQHzo8GxatzwE93ctsONZjbk7lqz.jpg" class="d-block detailimage" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://t4.ftcdn.net/jpg/03/22/11/17/240_F_322111756_xm8MZxGzYeIvPIoaDNzjeAGw7b52rHIe.jpg" class="d-block  detailimage" alt="...">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="detailcard">
+                            <p>A beautiful white marble art which respresents the symbol of love which was constructed by order of Mughal Emperor Shah Jahan in the memories of his wife.It is a masterpiece of architectural style in conception, treatment and execution and has unique aesthetic qualities in balance, symmetry and harmonious blending of various elements. Integrity is maintained in the intactness of tomb, mosque, guest house, main gate and the whole Taj Mahal complex.For visiting main mausoleum of the tajmahal one has to buy additional ticket of Rs.200/- along with regular ticket.Tourists can enjoy free entry to the Taj Mahal on February 27, 28 and March 1. As per the ASI officials, it marks the occasion of 367th Urs of the fifth Mughal Emperor Shah Jahan, which will be held in the Taj Mahal on the said three days.</p>
+                        </div>
+                        <div class="col-12 d-flex ">
+                            <div class="ml-auto">
+                                <button onclick="display('sectionHomePage')" class="custombtn">Back</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectionAkshardham">
+        <div class="detailview">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="detailheading">Akshardham</h1>
+                    </div>
+                    <div class="col-12">
+                        <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item">
+                                    <img src="https://www.holidify.com/images/cmsuploads/compressed/attr_wiki_4067_20191212124026.jpg" class="d-block detailimage" alt="...">
+                                </div>
+                                <div class="carousel-item active">
+                                    <img src="https://t3.ftcdn.net/jpg/03/24/60/08/240_F_324600809_fNi78cwRTyniCqElCBlBcSyM8X9hYeG3.jpg" class="d-block detailimage" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://t3.ftcdn.net/jpg/02/98/15/34/240_F_298153422_p03deW0d4Nr7hrcFmEbIhu4WacGlpNCU.jpg" class="d-block  detailimage" alt="...">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="detailcard">
+                            <p>Akshardham is one of the Largest Hindu Temple in India.sculptur's on this temple represents 10,000 years of indian culture.This was constructed in 2003 with efforts of 11,000 artists and opened to public in 2006.It includes a musical fountain and a boat ride which shows the great history of indian culture which was represented in sculpturing on the walls of temple.Akshardham Temple comprises 200 sculptured stone figures of India's sages, monks, Acharyas and divine incarnations. It also consists of 234 ornately carved pillars, 9 ornate domes, Gajendra Pith and 20,000 statues of divine figures of India.Tourists can enjoy pure, fresh vegetarian food and snacks at Premvati Food.Akshardham boat ride timings are from 10 AM to 8 PM, however the ticket counter closes by 7 PM. The ticket price for Boat Ride at Akshardham Temple is within the ticket cost exhibition shows, which is Rs. 170 per person for adults, Rs. 125 for visitors above the age of 60 years.No camera or purse allowed.</p>
+                        </div>
+                        <div class="col-12 d-flex ">
+                            <div class="ml-auto">
+                                <button onclick="display('sectionHomePage')" class="custombtn">Back</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectionGoldenTemple">
+        <div class="detailview">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="detailheading">Golden Temple</h1>
+                    </div>
+                    <div class="col-12">
+                        <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators3" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="https://media.istockphoto.com/photos/golden-temple-the-main-sanctuary-of-sikhs-amritsar-india-picture-id543179390?b=1&k=20&m=543179390&s=170667a&w=0&h=dupD0AfQK9t47zHiO0qNPKEYjHbxeMvf0IACIi4gic8=" class="d-block detailimage" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://wallpaperaccess.com/full/1274246.jpg" class="d-block detailimage" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://img.freepik.com/free-photo/golden-temple-amritsar_163782-1575.jpg?size=626&ext=jpg&ga=GA1.2.617948991.1650019836" class="d-block  detailimage" alt="...">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="detailcard">
+                            <p>Golden Temple was built as a place of worship of all religions.It also includes world's largest free kitchen which is capable to serve more than 300,000 people a day.It is also known as symbol of brotherhoodness.There are no religious statues inside the Golden Temple. Sikhs prefer to imagine God. Anyone can lead the worship at a Sikh temple - there are no priests. The foundation stone of the Golden Temple was laid down by a Muslim saint called Mian Mir.The temple is open to everyone – regardless of religion, caste, colour or sex. But there are a few stringently enforced rules that a visitor must observe – at the risk of being publicly and at times, rudely reprimanded by the burly temple guards who roam the complex ticking off offenders.On arrival at the Golden Temple, both men and women are required to wear a scarf over their head (don’t worry if you forget to bring a scarf as headscarves are sold outside at a very cheap price).All visitors must remove their shoes and wash their feet by walking through pools before entering the temple, as there is a cloakroom in the Golden Temple for shoes.Inside the Golden Temple chewing gum, sun glasses and photography are prohibited.The entry is free to Golden Temple and free darshan is available to all devotees. Temple is always open we can visit in any time.Depending on your level of religious fervour, any time is a good time of day to visit. If you are the kind who wishes to avoid getting into endless queues, then early morning at 4 AM or late at night are great times to go to the temple.</p>
+                        </div>
+                        <div class="col-12 d-flex ">
+                            <div class="ml-auto">
+                                <button onclick="display('sectionHomePage')" class="custombtn">Back</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectionDalLake">
+        <div class="detailview">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="detailheading">Dal Lake</h1>
+                    </div>
+                    <div class="col-12">
+                        <div id="carouselExampleIndicators4" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators4" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators4" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators4" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item">
+                                    <img src="https://image3.mouthshut.com/images/imagesp/925804900s.jpg" class="d-block detailimage" alt="...">
+                                </div>
+                                <div class="carousel-item active">
+                                    <img src="https://media.istockphoto.com/photos/beautiful-view-of-dal-lake-in-winter-srinagar-kashmir-india-picture-id1323846766?b=1&k=20&m=1323846766&s=170667a&w=0&h=ax37KHHN6VL7ESLPhlDkva26WZdDu8DFSHLIuEDTNY8=" class="d-block detailimage" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://media.istockphoto.com/photos/boat-in-dal-lake-picture-id1155225100?b=1&k=20&m=1155225100&s=170667a&w=0&h=l0dbPhFkBrLaTyCWa2xJMMxv4PieqzWzGakRutp9upw=" class="d-block  detailimage" alt="...">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators4" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators4" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="detailcard">
+                            <p>Dal Lake is the beautiful lake where we can stay in the boat houses.The lake is surrounded with Himalayas, many tourists visit this place in winter to observe the beauty of himalayas.The urban lake, is integral to tourism and recreation in Kashmir and is named the “Jewel in the crown of Kashmir” or “Srinagar's Jewel”. The lake is also an important source for commercial operations in fishing and water plant harvesting.The report states that the main issues related to the lake are the discharge of untreated sewage and waste by people who live in houseboats in the lake, and those who live in adjoining residential areas. Plus, there is excessive weed growth, reduction in water purity and siltation.Shikara ride costs Rs. 500/- per hour and only 4 adults and 2 children are allowed.</p>
+                        </div>
+                        <div class="col-12 d-flex ">
+                            <div class="ml-auto">
+                                <button onclick="display('sectionHomePage')" class="custombtn">Back</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectionRanthamboreNationalPark">
+        <div class="detailview">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="detailheading">Ranthambore National Park</h1>
+                    </div>
+                    <div class="col-12">
+                        <div id="carouselExampleIndicators5" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators5" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators5" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators5" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="https://media.istockphoto.com/photos/tiger-country-picture-id157739460?b=1&k=20&m=157739460&s=170667a&w=0&h=9OfLZXQQj-Yc_qiQLIbp8PE5RHl9rizVvwsRrMxfXTs=" class="d-block detailimage" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://media.istockphoto.com/photos/bengal-tigers-in-front-of-tourist-car-picture-id471836466?k=20&m=471836466&s=612x612&w=0&h=qiKN6_njnJ495JRJqv-SeP9l1zbrdIPB4P9KFOJV4BM=" class="d-block detailimage" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://media.istockphoto.com/photos/tiger-in-its-habitat-picture-id1088382834?k=20&m=1088382834&s=612x612&w=0&h=SBw3F6yyW4HV4xNYDYUzvP1OtwqMQXHxFesbt_d-iSA=" class="d-block  detailimage" alt="...">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators5" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators5" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="detailcard">
+                            <p>Ranthambore National Park is a national park in Rajasthan, India, with an area of 1,334 km². It is bounded to the north by the the Banas River.It is a former royal hunting ground and home to tigers, leopards and marsh crocodiles. Its landmarks include the imposing 10th-century Ranthambore Fort, on a hilltop, and the Ganesh Mandir temple. Also in the park, Padam Talao Lake is known for its abundance of water lilies.The best time to go to Ranthambore for wildlife watching is just before the rains, from April to June. Be aware that it can get very hot now – 40°C – but the scarcity of water encourages animals out into the open.The morning jungle safaris are conducted from 7: AM to 10:30 AM, while the evening jungle safaris are conducted from 2:30 PM to 6:00 PM.Canter Price is Rs 617 per person for Indians and Rs 1,357 per person for foreigners. Children (0-5) under five years old are free to visit. </p>
+                        </div>
+                        <div class="col-12 d-flex ">
+                            <div class="ml-auto">
+                                <button onclick="display('sectionHomePage')" class="custombtn">Back</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectionTirupati">
+        <div class="detailview">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="detailheading">Tirupati</h1>
+                    </div>
+                    <div class="col-12">
+                        <div id="carouselExampleIndicators6" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators6" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators6" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators6" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="https://media.easemytrip.com/media/Blog/India/637109852636177189/637109852636177189SA76a3.jpg" class="d-block detailimage" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://wallpapercave.com/wp/wp8217871.jpg" class="d-block detailimage" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://i0.wp.com/www.wordzz.com/wp-content/uploads/2017/04/venkateswara-closeup-image-1024x640.jpg?resize=1024%2C640&ssl=1" class="d-block  detailimage" alt="...">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators6" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators6" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="detailcard">
+                            <p>Sri Venkateswara Swami Vaari Temple is a Hindu temple situated in the hill town of Tirumala at Tirupati in Tirupati district of Andhra Pradesh, India. The Temple is dedicated to Venkateswara, a form of Vishnu, who is believed to have appeared here to save mankind from trials and troubles of Kali Yuga.Tirumala Hills are part of Seshachalam Hills range. The hills are 853 metres (2,799 ft) above sea level. The Hills comprises seven peaks, representing the seven heads of Adisesha. The temple lies on the seventh peak -Venkatadri, on the southern banks of Sri Swami Pushkarini, a holy water tank. Hence the temple is also referred to as "Temple of Seven Hills". Tirumala town covers about 10.33 sq mi (26.75 km2) in area.The Devotees can book their TTD Special Entry Darshan (SED) 300 rs tickets and TTD free darshan tickets for the month of March. Every day, Tirumala Tirupati Temple is visited by about 1 lakh pilgrims.The Tirumala temple will remain open for darshan of the Lord between 6.30 am and 7.30 pm every day.</p>
+                        </div>
+                        <div class="col-12 d-flex ">
+                            <div class="ml-auto">
+                                <button onclick="display('sectionHomePage')" class="custombtn">Back</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectionAdiyogistatue">
+        <div class="detailview">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="detailheading">Adiyogi statue</h1>
+                    </div>
+                    <div class="col-12">
+                        <div id="carouselExampleIndicators7" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators7" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators7" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators7" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="https://t3.ftcdn.net/jpg/04/92/55/68/240_F_492556847_e8Wa73WggZA4XJqH3E91y1Mz9ylsBtNO.jpg" class="d-block detailimage" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://wallpaperaccess.com/full/6508633.jpg" class="d-block detailimage" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://t3.ftcdn.net/jpg/02/72/37/32/240_F_272373287_sYNBqiWhcffOuLuhbwxLgPHNxcY2ePcN.jpg" class="d-block  detailimage" alt="...">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators7" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators7" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="detailcard">
+                            <p>The Adiyogi statue is a 34-metre tall, 45-metre long and 25-metre wide steel statue of Shiva with Thirunamam at Coimbatore, Tamil Nadu. It is recognized by the Guinness World Records as the "Largest Bust Sculpture” in the world. Designed by Sadhguru Jaggi Vasudev, it weighs around 500 tonnes.The statue was built to take forward the idea of promoting yoga, and the name also suggests the same. It is called Adiyogi, which means the first yogi, and Lord Shiva is known to be the originator of yoga.There is no entry fee.
+                                During Purnima and Amavasya, the place is open until midnight. Also, a music concert is offered in front of the Adiyogi Shiva Statue at night, from 10:30 pm to 11:30 pm followed by the distribution of prasad.</p>
+                        </div>
+                        <div class="col-12 d-flex ">
+                            <div class="ml-auto">
+                                <button onclick="display('sectionHomePage')" class="custombtn">Back</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectionStatueofUnity">
+        <div class="detailview">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="detailheading">Statue of Unity</h1>
+                    </div>
+                    <div class="col-12">
+                        <div id="carouselExampleIndicators8" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators8" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators8" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators8" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="https://www.deccanherald.com/sites/dh/files/articleimages/2020/11/29/pti10312018000216b-1-921346-1606662197.jpg" class="d-block detailimage" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://www.outlookindia.com/outlooktraveller/public/uploads/filemanager/images/Foot-and-sandal-of-the-statue.gif" class="d-block detailimage" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="http://www.bildstudios.com/media/content/test_1545144821.jpeg" class="d-block  detailimage" alt="...">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators8" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators8" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="detailcard">
+                            <p>The Statue of Unity is the world's tallest statue, with a height of 182 metres, located in the state of Gujarat, India. It depicts Indian statesman and independence activist Vallabhbhai Patel, who was the first deputy prime minister and home minister of independent India and an adherent of Mahatma Gandhi. October 31st, 2018, marked the inauguration of the world's tallest statue – the Statue of Unity, against the backdrop of the dramatic Satpura and Vindhyachal hills in Kevadia, Gujarat. The 182-metre (600 feet aprox.) statue is dedicated to Sardar Vallabhbhai Patel, the architect of independent India.The Statue of Unity is the world's tallest statue at 182 metres (597 ft). It rises 54 metres (177 ft) higher than the previous record holder, the Spring Temple Buddha in China's Henan province.A basic entry ticket to the Statue of Unity costs ₹ 120 for adults and ₹ 60 for kids. It gives you entry to the valley of flower, memorial, museum and audio visual gallery, the Statue of Unity site and the Sardar Sarovar Dam.The Statue of Unity opens at 8:00 AM and closes at 6:00 PM from Tuesday to Sunday. The Laser Light and Sound Show can be viewed from 7:30 PM onwards daily, except on Mondays</p>
+                        </div>
+                        <div class="col-12 d-flex ">
+                            <div class="ml-auto">
+                                <button onclick="display('sectionHomePage')" class="custombtn">Back</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectionRamMandirAyodhya">
+        <div class="detailview">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="detailheading">Ram Mandir Ayodhya</h1>
+                    </div>
+                    <div class="col-12">
+                        <div id="carouselExampleIndicators9" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators9" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators9" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators9" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="https://images.newindianexpress.com/uploads/user/imagelibrary/2021/11/3/w900X450/Ram_Mandir_EPS1231.jpg?w=400&dpr=2.6" class="d-block detailimage" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://images.indianexpress.com/2020/09/ram-temple.jpg" class="d-block detailimage" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://spiderimg.amarujala.com/assets/images/2020/10/14/750x506/ayodhya_1602655835.jpeg" class="d-block  detailimage" alt="...">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators9" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators9" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="detailcard">
+                            <p>Ram Mandir is a Hindu temple that is being built in Ayodhya, Uttar Pradesh, India, at the site of Ram Janmabhoomi, according to the Ramayana the birthplace of Rama, a principal deity of Hinduism. The temple construction is being supervised by the Shri Ram Janmabhoomi Teerth KshetraThe Ram temple in Ayodhya will be built in around three years and the construction cost of the project will exceed Rs 1100 crore, a prominent functionary of the temple trust has said. “The main temple will be built in three to three and a half years and will cost Rs 300-400 crore.</p>
+                        </div>
+                        <div class="col-12 d-flex ">
+                            <div class="ml-auto">
+                                <button onclick="display('sectionHomePage')" class="custombtn">Back</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>
